@@ -4,6 +4,7 @@ Devs from Chingu Voyage 5 cooperate to build projects from P1xt's Speedruns.
 The first speedrun we will be attempting is the [Frontend Speedrun](./Frontend_Speedrun.md)
 You can see P1xt's full repo [here](https://github.com/P1xt/speedrun-challenge), and
 the rest of P1xt's guides [here](https://github.com/P1xt/p1xt-guides).
+
 ## Progress
 
 Add an entry here for each speedrun you undertake
@@ -27,9 +28,23 @@ Add an entry here for each speedrun you undertake
 ### The goal
 
 Complete as many projects as you can in one month.
-### Speedrun options
+
+### Current Speedrun
 
 * [Frontend Speedrun](./Frontend_Speedrun.md)
+* [CSS Speedrun](./CSS_Speedrun.md)
+
+### Future Speedrun Options
+
+* [FreeCodeCamp Speedrun](./FCC_Speedrun.md)
+* [Game Development Speedrun](./GameDev_Speedrun.md)
+* [Angular Frontend Speedrun](./Angular_Frontend_Speedrun.md)
+* [Vue Frontend Speedrun](./Vue_Frontend_Speedrun.md)
+* [React Frontend Speedrun](./React_Frontend_Speedrun.md)
+* [Full Stack Speedrun](./FullStack_Speedrun.md)
+* [Open Source PR Speedrun](./Open_Source_Speedrun.md)
+* [Algorithms Speedrun](./Algorithms_Speedrun.md)
+
 
 ### The Rules
 
