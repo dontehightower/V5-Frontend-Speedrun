@@ -5,6 +5,10 @@ The first speedrun we will be attempting is the [Frontend Speedrun](./Frontend_S
 You can see P1xt's full repo [here](https://github.com/P1xt/speedrun-challenge), and
 the rest of P1xt's guides [here](https://github.com/P1xt/p1xt-guides).
 
+To start a project, just create a branch with the name of that project, copy the finished 
+version of the project into that branch and get to work cloning it! Once the project is 
+complete, we will merge it into master.
+
 ## Progress
 
 Add an entry here for each speedrun you undertake
