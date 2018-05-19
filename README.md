@@ -32,10 +32,10 @@ Complete as many projects as you can in one month.
 ### Current Speedrun
 
 * [Frontend Speedrun](./Frontend_Speedrun.md)
-* [CSS Speedrun](./CSS_Speedrun.md)
 
 ### Future Speedrun Options
 
+* [CSS Speedrun](./CSS_Speedrun.md)
 * [FreeCodeCamp Speedrun](./FCC_Speedrun.md)
 * [Game Development Speedrun](./GameDev_Speedrun.md)
 * [Angular Frontend Speedrun](./Angular_Frontend_Speedrun.md)
