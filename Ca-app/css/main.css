@@ -1,3 +1,4 @@
+@import url(./themify-icons.css);
 * {
   margin: 0;
   padding: 0;
@@ -13,25 +14,34 @@ h1, h2, h3, h4, h5, h6 {
 body {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background-color: #fff; }
 
 h1 {
   font-size: 100px;
+  line-height: 1.5;
   color: #fff;
   font-weight: bold;
   width: 100%; }
+
+h4 {
+  color: #5b32b4;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15px; }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
   width: 100%;
   height: 70px;
   position: fixed;
   padding: 0 4%;
   z-index: 1; }
   header #logo {
-    font-size: 50px;
+    font-size: 72px;
     color: #fff; }
   header nav {
     display: flex;
@@ -57,8 +67,84 @@ header {
   position: relative;
   background-image: url(../img/bg-img/welcome-bg.png);
   background-size: cover; }
-  #home p {
-    color: white;
+  #home #welcome-message {
+    margin-bottom: 100px; }
+    #home #welcome-message p {
+      color: white;
+      font-size: 16px;
+      margin-bottom: 1rem; }
+    #home #welcome-message #big-c {
+      position: absolute;
+      top: 149px;
+      left: 158px;
+      font-size: 332px;
+      font-weight: 900;
+      opacity: .1;
+      color: #fff; }
+  #home img {
+    position: absolute;
+    bottom: -165px;
+    right: 85px;
+    width: 45%;
+    height: auto; }
+  #home .email {
+    background-color: #9572e8;
+    height: 50px;
+    border: none;
+    border-radius: 24px;
+    width: 240px;
+    padding: 0 30px 0 15px; }
+  #home .submit {
+    background-color: #fb3979;
+    line-height: 1.5;
+    min-width: 167px;
+    border: none;
+    height: 50px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 24px 24px 24px 0;
+    margin-left: 10px; }
+  #home ::placeholder {
+    color: #cec1f4;
+    opacity: 1;
     font-size: 16px; }
+
+#about {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px 0; }
+  #about h2 {
+    font-size: 48px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5;
+    width: 100%;
+    color: #5b32b4; }
+  #about p {
+    color: #726a84;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5; }
+  #about article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 260px;
+    margin: 1.5%;
+    border: 1px solid #eff2f6;
+    border-radius: 40px 40px 40px 0;
+    padding: 40px; }
+    #about article i {
+      font-size: 36px;
+      font-weight: 400;
+      margin-bottom: 25px;
+      color: #fb397d; }
+  #about article:hover {
+    box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08); }
 
 /*# sourceMappingURL=main.css.map */

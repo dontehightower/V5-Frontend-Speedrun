@@ -1,5 +1,10 @@
+@import './themify-icons.css';
+
 // General Styles 
-  
+$header-purple: #5b32b4;
+$red: #fb3979;
+$grey: #726a84;
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background-color: #fff;
 }
 
 h1 {
@@ -28,6 +34,14 @@ h1 {
   font-weight: bold;
   width: 100%;
 }
+
+h4 {
+  color: $header-purple;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
 // Navbar Styles
 
 header {
@@ -123,5 +137,49 @@ header {
     color: #cec1f4;
     opacity: 1;
     font-size: 16px;
+  }
+}
+
+#about {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px 0;
+  h2 {
+    font-size: 48px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5;
+    width: 100%;
+    color: $header-purple;
+  }
+  p {
+    color: $grey;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 260px;
+    margin: 1.5%;
+    border: 1px solid #eff2f6;
+    border-radius: 40px 40px 40px 0;
+    padding: 40px;
+    i {
+      font-size: 36px;
+      font-weight: 400;
+      margin-bottom: 25px;
+      color:#fb397d;
+    }
+  }
+  article:hover {
+    box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
   }
 }
