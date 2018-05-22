@@ -9,7 +9,8 @@ html {
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin-bottom: .5em; }
 
 body {
   display: flex;
@@ -40,9 +41,15 @@ p {
 
 h4 {
   color: #5b32b4;
-  font-size: 22px;
+  font-size: 1.5em;
   font-weight: 400;
   margin-bottom: 15px; }
+
+h5 {
+  color: #5b32b4;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.5; }
 
 .fab {
   font-size: 24px;
@@ -158,34 +165,33 @@ header {
   #about article:hover {
     box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08); }
 
-#features {
-  padding: 100px 0;
+#app-store {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 100px; }
-  #features img {
+  #app-store img {
     width: 540px;
     height: 459px;
     flex-basis: 50%; }
-  #features article {
+  #app-store article {
+    height: auto;
     width: 35%;
-    flex-basis: 40%;
     margin: 0 5%; }
-    #features article h2 {
+    #app-store article h2 {
       width: 445px;
       text-align: left;
       line-height: 1.2;
       margin-bottom: .5em; }
-    #features article p {
+    #app-store article p {
       width: 445px;
       text-align: left;
       margin-bottom: 3em; }
-    #features article div {
+    #app-store article div {
       display: flex;
       width: 100%;
       flex-wrap: wrap; }
-      #features article div a {
+      #app-store article div a {
         display: flex;
         border: 1px solid #eff2f6;
         border-radius: 30px 30px 30px 0;
@@ -198,23 +204,39 @@ header {
         text-decoration: none;
         margin-left: 15px;
         color: #726a84; }
-        #features article div a:hover {
+        #app-store article div a:hover {
           border: none;
           box-shadow: none;
           background-color: #fb3979;
           color: #fff;
           transition-duration: 500ms; }
-          #features article div a:hover p {
+          #app-store article div a:hover p {
             color: #fff; }
-          #features article div a:hover i {
+          #app-store article div a:hover i {
             color: #fff; }
-        #features article div a p {
+        #app-store article div a p {
           font-size: 16px;
           line-height: 1;
           margin-bottom: 0;
           margin-left: 10px; }
-          #features article div a p span {
+          #app-store article div a p span {
             display: block;
             font-size: 12px; }
+
+.feature-grid {
+  margin: 40px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(350px);
+  grid-gap: 3em; }
+  .feature-grid summary i {
+    float: left;
+    font-size: 30px;
+    display: inline-block;
+    font-weight: 400;
+    color: #fb397d;
+    margin-right: 10px; }
+  .feature-grid summary h5 {
+    display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */

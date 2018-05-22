@@ -18,6 +18,7 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
+  margin-bottom: .5em;
 }
 
 body {
@@ -53,9 +54,16 @@ p {
 }
 h4 {
   color: $header-purple;
-  font-size: 22px;
+  font-size: 1.5em;
   font-weight: 400;
   margin-bottom: 15px;
+}
+
+h5 {
+  color: $header-purple;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .fab {
@@ -198,8 +206,7 @@ header {
   }
 }
 
-#features {
-  padding: 100px 0;
+#app-store {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -210,8 +217,8 @@ header {
     flex-basis: 50%;
   }
   article {
+    height: auto;
     width: 35%;
-    flex-basis: 40%;
     margin: 0 5%;
     h2 {
       width: 445px;
@@ -265,6 +272,27 @@ header {
           }
         }
       } 
+    }
+  }
+}
+
+.feature-grid {
+  margin: 40px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(350px);
+  grid-gap: 3em;
+  summary {
+    i {
+        float: left;
+        font-size: 30px;
+        display: inline-block;
+        font-weight: 400;
+        color:#fb397d;
+        margin-right: 10px;
+    }
+    h5 {
+      display: inline-block;
     }
   }
 }
