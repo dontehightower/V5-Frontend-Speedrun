@@ -76,21 +76,35 @@ section h2 {
   width: 100%;
 }
 
-// Navbar Styles
+.initial-header {
+  #logo {
+    font-size: 70px;
+  }
+}
 
+.fixed-header {
+  margin-top: 0;
+  background-color: #884bdf;
+  position: absolute;
+  #logo {
+    font-size: 56px;
+    font-weight: 700;
+  }
+}
+
+// Navbar Styles
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // margin-top: 20px;
-  background-color: #884bdf;
+  margin-top: 20px;
   width: 100%;
   height: 70px;
   position: fixed;
   padding: 0 4%;
   z-index: 1;
   #logo {
-    font-size: 72px;
+    font-size: 70px;
     font-weight: 700;
     color: #fff;
   }
@@ -402,6 +416,9 @@ header {
     align-items: center;
   }
   .card {
+    .header {
+      padding: 29px 0;
+    }
     background-color: #fff;
     text-align: center;
     width: 277px;
@@ -413,9 +430,13 @@ header {
       list-style: none;
       padding: 10px 0;
       border-top: 1px solid #eee;
-      border-bottom: 1px solid #eee;
+      border-bottom: .5px solid #eee;
       color: #726a84;
       font-size: 16px;
+    }
+    ul:last-child{
+       border: none;
+      //  background-color: #726a84;
     }
     span {
       display: inline;
