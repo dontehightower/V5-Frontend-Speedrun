@@ -276,6 +276,7 @@ header {
   }
 }
 
+// Features Section
 .feature-grid {
   margin: 40px 100px;
   display: grid;
@@ -294,5 +295,19 @@ header {
     h5 {
       display: inline-block;
     }
+  }
+}
+
+// Video Section
+
+#video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  iframe {
+    border: 20px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
   }
 }
