@@ -259,7 +259,6 @@ header {
   height: 300px;
   padding: 180px 0 80px 0;
   margin-top: -150px;
-  margin-bottom: 200px;
   background: linear-gradient(to left, #7873ed, #a865e1); }
   #cool-facts .cool-fact {
     display: flex;
@@ -282,5 +281,26 @@ header {
       #cool-facts .cool-fact .fact-content i {
         font-size: 36px;
         color: #fff; }
+
+#screenshots {
+  padding: 100px 0; }
+  #screenshots h2 {
+    text-align: center;
+    line-height: 1.2; }
+  #screenshots hr {
+    color: #fb3979;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #fb3979;
+    border-radius: 24px;
+    margin: 0 auto;
+    margin-bottom: 50px; }
+  #screenshots .carousel {
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between; }
+  #screenshots img {
+    width: 212px;
+    height: 377px; }
 
 /*# sourceMappingURL=main.css.map */

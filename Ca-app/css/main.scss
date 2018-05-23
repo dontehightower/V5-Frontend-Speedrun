@@ -314,6 +314,8 @@ header {
   }
 }
 
+// Cool Facts Section
+
 #cool-facts {
   display: flex;
   align-items: center;
@@ -322,7 +324,6 @@ header {
   height: 300px;
   padding: 180px 0 80px 0;
   margin-top: -150px;
-  margin-bottom: 200px;
   background: linear-gradient(to left, #7873ed, #a865e1);
   .cool-fact {
     display: flex;
@@ -350,5 +351,31 @@ header {
         color: #fff;
       }
     }
+  }
+}
+
+#screenshots {
+  padding: 100px 0;
+  h2 {
+    text-align: center;
+    line-height: 1.2;
+  }
+  hr {
+    color: $red;
+    width: 100px;
+    text-align: center;
+    border: 1px solid $red;
+    border-radius: 24px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .carousel {
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+  }
+  img {
+    width: 212px;
+    height: 377px;
   }
 }
