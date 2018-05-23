@@ -1,4 +1,5 @@
 @import url(./themify-icons.css);
+@import url(./ionicons.css);
 * {
   margin: 0;
   padding: 0;
@@ -247,6 +248,39 @@ header {
   #video iframe {
     border: 20px solid #fff;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 20px; }
+    border-radius: 20px;
+    z-index: 2; }
+
+#cool-facts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  padding: 180px 0 80px 0;
+  margin-top: -150px;
+  margin-bottom: 200px;
+  background: linear-gradient(to left, #7873ed, #a865e1); }
+  #cool-facts .cool-fact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 255px;
+    height: 108px; }
+    #cool-facts .cool-fact h3 {
+      font-size: 60px;
+      color: #fff;
+      line-height: 1;
+      font-weight: 300; }
+    #cool-facts .cool-fact .fact-content {
+      margin-left: 1em; }
+      #cool-facts .cool-fact .fact-content p {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 0;
+        text-transform: uppercase; }
+      #cool-facts .cool-fact .fact-content i {
+        font-size: 36px;
+        color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
