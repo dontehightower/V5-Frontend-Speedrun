@@ -64,11 +64,13 @@ section h2 {
 
 .fixed-header {
   margin-top: 0;
+  align-items: center;
   background-color: #884bdf;
-  position: absolute; }
+  z-index: 3; }
   .fixed-header #logo {
     font-size: 56px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 0; }
 
 header {
   display: flex;
@@ -314,13 +316,13 @@ header {
     width: 212px;
     height: 377px; }
 
-#pricing-plan {
+#pricing {
   background-color: #f5f9fc;
   padding: 100px 0; }
-  #pricing-plan h2 {
+  #pricing h2 {
     text-align: center;
     line-height: 1.2; }
-  #pricing-plan hr {
+  #pricing hr {
     color: #fb3979;
     width: 100px;
     text-align: center;
@@ -328,11 +330,17 @@ header {
     border-radius: 24px;
     margin: 0 auto;
     margin-bottom: 50px; }
-  #pricing-plan .container {
+  #pricing .container {
     display: flex;
     justify-content: center;
     align-items: center; }
-  #pricing-plan .card {
+  #pricing .card.selected-price .header {
+    background-color: #a865e1; }
+    #pricing .card.selected-price .header h4, #pricing .card.selected-price .header h5, #pricing .card.selected-price .header span {
+      color: #fff; }
+  #pricing .card.selected-price ul li:last-child {
+    background-color: #a865e1; }
+  #pricing .card {
     background-color: #fff;
     text-align: center;
     width: 277px;
@@ -340,26 +348,29 @@ header {
     display: inline-block;
     border: 1px solid #eee;
     border-radius: 30px 30px 30px 0; }
-    #pricing-plan .card .header {
-      padding: 29px 0; }
-    #pricing-plan .card li {
+    #pricing .card .header {
+      padding: 32px 0;
+      border-radius: 30px 30px 0 0; }
+      #pricing .card .header span {
+        display: inline;
+        line-height: 1.5;
+        color: #fb3979;
+        font-size: 18px; }
+      #pricing .card .header h5 {
+        font-size: 18px; }
+      #pricing .card .header h4 {
+        font-size: 48px;
+        color: #fb3979; }
+    #pricing .card ul li {
       list-style: none;
       padding: 10px 0;
-      border-top: 1px solid #eee;
-      border-bottom: .5px solid #eee;
+      border: .5px solid #eee;
       color: #726a84;
       font-size: 16px; }
-    #pricing-plan .card ul:last-child {
-      border: none; }
-    #pricing-plan .card span {
-      display: inline;
-      line-height: 1.5;
-      color: #fb3979;
-      font-size: 18px; }
-    #pricing-plan .card h5 {
-      font-size: 18px; }
-    #pricing-plan .card h4 {
-      font-size: 48px;
-      color: #fb3979; }
+      #pricing .card ul li:last-child {
+        border: none;
+        background-color: #726a84;
+        border-radius: 0 0 30px 0;
+        color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
