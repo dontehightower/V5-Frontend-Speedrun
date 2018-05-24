@@ -1,0 +1,10 @@
+@keyframes phone-slide-in {
+  0% {
+    opacity: 0;
+    bottom: -80px;
+  }
+  100% {
+    opacity: 1;
+    bottom: -100px;
+  }
+}
