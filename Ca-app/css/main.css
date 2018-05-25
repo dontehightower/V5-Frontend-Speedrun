@@ -1,5 +1,9 @@
 @import url(./themify-icons.css);
 @import url(./ionicons.css);
+@import url(./animations.css);
+@font-face {
+  font-family: 'Cabin';
+  src: url("Cabin-Bold.ttf") format("ttf"), url("myfont.woff") format("woff"); }
 * {
   margin: 0;
   padding: 0;
@@ -34,12 +38,6 @@ h2 {
   line-height: 1.5;
   color: #5b32b4; }
 
-p {
-  color: #726a84;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.5; }
-
 h4 {
   color: #5b32b4;
   font-size: 1.5em;
@@ -51,6 +49,21 @@ h5 {
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.5; }
+
+p {
+  color: #726a84;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5; }
+
+hr {
+  color: #fb3979;
+  width: 100px;
+  text-align: center;
+  border: 1px solid #fb3979;
+  border-radius: 24px;
+  margin: 0 auto;
+  margin-bottom: 50px; }
 
 .fab {
   font-size: 24px;
@@ -125,9 +138,10 @@ header {
       opacity: .1;
       color: #fff; }
   #home img {
+    animation: phone-slide-in 1s linear 500ms;
     position: absolute;
-    bottom: -165px;
-    right: 85px;
+    bottom: -120px;
+    right: 55px;
     width: 45%;
     height: auto; }
   #home .email {
@@ -238,7 +252,8 @@ header {
             font-size: 12px; }
 
 .feature-grid {
-  margin: 40px 100px;
+  padding: 0 80px;
+  margin: 60px 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(350px);
@@ -372,5 +387,141 @@ header {
         background-color: #726a84;
         border-radius: 0 0 30px 0;
         color: #fff; }
+
+#testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  flex-wrap: wrap; }
+  #testimonials .fa-quote-left {
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    color: #897ceb;
+    margin-bottom: 40px; }
+  #testimonials .quote {
+    width: 100%;
+    font-size: 22px;
+    max-width: 1000px;
+    margin-bottom: 15px;
+    text-align: center; }
+  #testimonials .stars {
+    width: 100%;
+    text-align: center;
+    display: block; }
+  #testimonials .stars i {
+    text-align: center;
+    display: inline-block;
+    color: #f1b922; }
+  #testimonials h5 {
+    text-align: center;
+    width: 100%; }
+  #testimonials .job-title {
+    width: 100%;
+    text-align: center;
+    color: #b5aec4;
+    font-size: 16px; }
+
+.image-wheel img {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  margin: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); }
+
+#monthly-membership {
+  height: 200px;
+  padding: 60px 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to left, #7873ed, #a865e1); }
+  #monthly-membership h2 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #fff; }
+  #monthly-membership p {
+    font-size: 1em;
+    line-height: 1;
+    color: #fff; }
+  #monthly-membership a {
+    color: #fb3979;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-radius: 30px 30px 30px 0; }
+
+.team-grid {
+  padding: 0 100px 0 50px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-gap: 2em;
+  justify-content: center;
+  margin-bottom: 100px; }
+  .team-grid img {
+    border-radius: 24px 24px 24px 0;
+    border: none;
+    width: 100%; }
+  .team-grid h4 {
+    margin-top: 20px; }
+  .team-grid p {
+    color: #b5aec4;
+    line-height: 1.5; }
+
+#contact-area {
+  background-color: #f5f9fc;
+  display: flex;
+  padding: 100px;
+  width: 100%;
+  justify-content: space-around; }
+  #contact-area .info {
+    width: 45%; }
+    #contact-area .info h2 {
+      text-align: left; }
+    #contact-area .info hr {
+      text-align: left; }
+    #contact-area .info .offer {
+      margin-bottom: 50px; }
+    #contact-area .info p {
+      margin-bottom: 10px; }
+    #contact-area .info span {
+      font-size: 20px;
+      color: #5b32b4;
+      line-height: 1.5; }
+  #contact-area form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    #contact-area form .form-control {
+      width: 100%;
+      height: 60px;
+      padding: 15px;
+      margin: 1em 0;
+      border-radius: 30px 30px 30px 0;
+      border: 1px solid #eee; }
+    #contact-area form .form-control::placeholder {
+      color: #cec1f4;
+      font-size: 16px; }
+    #contact-area form textarea.form-control {
+      height: 10em;
+      font-family: 'Cabin', sans-serif; }
+    #contact-area form .submit {
+      border-radius: 30px 30px 30px 0;
+      border: none;
+      text-align: center;
+      padding: 15px 30px;
+      background-color: #fb3979;
+      color: #fff;
+      width: 60px;
+      width: 185px; }
+      #contact-area form .submit:hover {
+        background-color: #5b32b4;
+        transition-duration: 500ms; }
 
 /*# sourceMappingURL=main.css.map */
