@@ -1,0 +1,14 @@
+{
+  "name": "ca-app",
+  "version": "1.0.0",
+  "description": "Colorlib app clone for front-end speedrun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uikit": "^3.0.0-rc.2"
+  }
+}

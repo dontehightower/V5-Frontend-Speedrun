@@ -95,26 +95,74 @@ header {
   position: fixed;
   padding: 0 4%;
   z-index: 1; }
+  @media screen and (max-width: 1200px) {
+    header {
+      padding: 0 6%; } }
   header #logo {
     font-size: 70px;
     font-weight: 700;
     color: #fff; }
+    @media screen and (max-width: 1200px) {
+      header #logo {
+        font-size: 48px;
+        align-self: flex-start; } }
+  @media screen and (max-width: 900px) {
+    header .responsive li a:not(.btn) {
+      display: block; } }
+  header responsive {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-content: flex-end;
+    height: 60px;
+    width: 100%;
+    border-radius: 24px; }
+    header responsive li {
+      width: 100%;
+      float: none;
+      text-align: right;
+      padding: 10px 0; }
+      header responsive li:not(:first-child) {
+        text-align: left;
+        background-color: #5b32b4; }
+        header responsive li:not(:first-child) a {
+          padding: 0 40px; }
   header nav {
     display: flex;
     flex-direction: row; }
+    @media screen and (max-width: 900px) {
+      header nav li a {
+        display: none; }
+      header nav li a.icon {
+        display: block;
+        font-size: 20px; } }
     header nav li {
       margin: 0 15px;
       display: inline-block;
       list-style: none; }
+      @media screen and (max-width: 1200px) {
+        header nav li {
+          margin: 0 8px; } }
+      @media screen and (max-width: 900px) {
+        header nav li {
+          margin: 0; } }
       header nav li a {
         text-decoration: none;
         font-size: 16px;
+        font-weight: 500;
         color: #fff; }
       header nav li .btn {
         margin-left: 50px;
-        padding: 15px 50px;
+        padding: 14px 45px;
         border: 2px solid #a883e9;
         border-radius: 24px 24px 24px 0; }
+        @media screen and (max-width: 1200px) {
+          header nav li .btn {
+            padding: 7px 35px;
+            font-size: 14px;
+            margin-left: 0; } }
+      header nav li .icon {
+        display: none; }
 
 #home {
   height: 100vh;
