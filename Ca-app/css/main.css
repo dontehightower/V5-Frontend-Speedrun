@@ -1,9 +1,6 @@
 @import url(./themify-icons.css);
 @import url(./ionicons.css);
 @import url(./animations.css);
-@font-face {
-  font-family: 'Cabin';
-  src: url("Cabin-Bold.ttf") format("ttf"), url("myfont.woff") format("woff"); }
 * {
   margin: 0;
   padding: 0;
@@ -49,6 +46,9 @@ h5 {
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.5; }
+
+ul {
+  list-style: none; }
 
 p {
   color: #726a84;
@@ -109,7 +109,7 @@ header {
   @media screen and (max-width: 900px) {
     header .responsive li a:not(.btn) {
       display: block; } }
-  header responsive {
+  header .responsive {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -117,15 +117,15 @@ header {
     height: 60px;
     width: 100%;
     border-radius: 24px; }
-    header responsive li {
+    header .responsive li {
       width: 100%;
       float: none;
       text-align: right;
       padding: 10px 0; }
-      header responsive li:not(:first-child) {
+      header .responsive li:not(:first-child) {
         text-align: left;
         background-color: #5b32b4; }
-        header responsive li:not(:first-child) a {
+        header .responsive li:not(:first-child) a {
           padding: 0 40px; }
   header nav {
     display: flex;
@@ -359,10 +359,14 @@ header {
         color: #fff; }
 
 #screenshots {
-  padding: 100px 0; }
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
   #screenshots h2 {
     text-align: center;
-    line-height: 1.2; }
+    line-height: 1.2;
+    color: #5b32b4; }
   #screenshots hr {
     color: #fb3979;
     width: 100px;

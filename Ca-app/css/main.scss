@@ -1,16 +1,31 @@
+// Custom Variables
+$header-purple: #5b32b4;
+$red: #fb3979;
+$grey: #726a84;
+
+// Font & Icon Imports
 @import './themify-icons.css';
 @import './ionicons.css';
 @import './animations.css';
 
-@font-face {
-  font-family: 'Cabin';
-  src:  url('Cabin-Bold.ttf') format('ttf'),
-        url('myfont.woff') format('woff');
-}
+// UI Kit Imports
+// $global-link-color: #DA7D02;
+
+// @import '../node_modules/uikit/src/scss/variables-theme.scss';
+// @import '../node_modules/uikit/src/scss/mixins-theme.scss';
+// @import '../node_modules/uikit/src/scss/uikit-theme.scss';
+// @import '../node_modules/uikit/src/scss/variables.scss';
+
+// @import '../node_modules/uikit/src/scss/uikit.scss';
+
 // General Styles 
-$header-purple: #5b32b4;
-$red: #fb3979;
-$grey: #726a84;
+
+// Font Styles
+// @font-face {
+//   font-family: 'Cabin';
+//   src:  url('Cabin-Bold.ttf') format('ttf'),
+//         url('myfont.woff') format('woff');
+// } 
 
 * {
   margin: 0;
@@ -65,6 +80,10 @@ h5 {
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.5;
+}
+
+ul {
+  list-style: none;
 }
 
 p {
@@ -140,7 +159,7 @@ header {
     }
   }
 
-  responsive {
+  .responsive {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -446,11 +465,17 @@ header {
   }
 }
 
+// Screenshots Section
+
 #screenshots {
   padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   h2 {
     text-align: center;
     line-height: 1.2;
+    color: $header-purple;
   }
   hr {
     color: $red;
